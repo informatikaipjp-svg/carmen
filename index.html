@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ha'u-nia Portfolio Kmanek</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">My<span>Portfolio</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#kontaktu">Kontaktu</a></li>
+        </ul>
+        <div class="menu-toggle" id="mobileMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Olá, Ha'u-nia Naran <span>Web Developer</span></h1>
+            <p>Ha'u kria website ne'ebé modernu, kmanek, no responsivu tuir ita-boot nia hakarak.</p>
+            <a href="#portfolio" class="btn">Haree Portfolio</a>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2>Ha'u-nia <span>Projetu</span></h2>
+        <p class="sub-title"> some ezemplu hosi serbisu ne'ebé ha'u halo ona.</p>
+        
+        <div class="portfolio-grid">
+            <div class="card">
+                <img src="1.jpg" alt="UI/UX Design">
+                <div class="card-info">
+                    <h3>UI/UX Dashboard</h3>
+                    <p>Design interface ne'ebé moos no fasil atu uza.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="2.jpg" alt="Web Development">
+                <div class="card-info">
+                    <h3>E-Commerce Web</h3>
+                    <p>Website loja online ho sistema pagamentu integradu.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="3.jpeg" alt="Sistem Kode">
+                <div class="card-info">
+                    <h3>Sistema Aldeia</h3>
+                    <p>Database no jestaun dadus populasaun nian.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontaktu" class="contact">
+        <h2>Iha Projetu ruma? <span>Kontaktu Ha'u</span></h2>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Obrigado! Mensajen haruka ona.');">
+            <input type="text" placeholder="Ita-boot nia Naran" required>
+            <input type="email" placeholder="Ita-boot nia Email" required>
+            <textarea placeholder="Mensajen..." rows="5" required></textarea>
+            <button type="submit" class="btn">Haruka Mensajen</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyPortfolio. Dezenvolve ho ❤️ uza HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
